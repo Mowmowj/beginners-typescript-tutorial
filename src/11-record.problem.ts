@@ -1,14 +1,18 @@
+//⭐️
 import { expect, it } from "vitest";
-
+type value = string
+interface cacheType {
+    id?:value,
+}
 const createCache = () => {
-  const cache = {};
+  const cache:cacheType = {};
 
   const add = (id: string, value: string) => {
-    cache[id] = value;
+    cache.id= value;
   };
 
   const remove = (id: string) => {
-    delete cache[id];
+    delete cache.id;
   };
 
   return {

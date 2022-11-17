@@ -32,6 +32,7 @@ const makeUser = (): User => {
   };
 };
 
+
 it("Should return a valid user", () => {
   const user = makeUser();
 
